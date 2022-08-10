@@ -1,7 +1,7 @@
 // Declarative pipeline
 pipeline {
     agent {
-		label 'salve'
+		label 'slave'
 	}
     stages {
         stage('CleanUp WorkSpace') {
