@@ -28,7 +28,6 @@ pipeline {
 	    stage ('Build Docker Image') {
 			environment {
         		DOCKER_HUB_REPO = "raghaduvva/flaskapp"
-        		DOCKERHUB_CREDENTIALS = credentials('docker-hub')
         		CONTAINER_NAME = "app"
 			}
             steps {
