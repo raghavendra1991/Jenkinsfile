@@ -23,7 +23,6 @@ pipeline {
 	        steps {
 	           echo "Building Image and Conatiner"
 	           sh 'python3 test.py'
-	           sh 'python3 coverage xml -o coverage/coverage.xml'
 	        }
         }
 	    stage ('Build Docker Image') {
